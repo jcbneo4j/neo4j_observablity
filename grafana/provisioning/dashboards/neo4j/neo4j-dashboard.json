@@ -1,0 +1,14 @@
+{
+  "title": "Neo4j Metrics",
+  "panels": [
+    {
+      "title": "Heap Usage",
+      "type": "timeseries",
+      "targets": [{
+        "expr": "neo4j_dbms_vm_memory_heap_used_bytes{job='neo4j'}",
+        "datasource": "Prometheus"
+      }]
+    }
+  ],
+  "datasource": "Prometheus"
+}
